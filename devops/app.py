@@ -4,17 +4,19 @@ app = Flask(__name__)
 
 @app.route("/")
 def home():
-    return {"mensagem": "API funcionando"}
+    return "Sistema de Gerenciamento de Biblioteca"
 
-@app.route("/status")
-def status():
-    return {"status": "API online"}
+@app.route("/sobre")
+def sobre():
+    return "Sistema desenvolvido em Flask para estudo de CI/CD"
 
-@app.route("/teste")
-def teste():
-    return {"status": "API teste"}
+@app.route("/livros")
+def livros():
+    return "Lista de livros cadastrados"
 
-
+@app.route("/cadastro-livro")
+def cadastro_livro():
+    return "Página de cadastro de livros"
 
 if __name__ == "__main__":
     app.run(debug=True)
