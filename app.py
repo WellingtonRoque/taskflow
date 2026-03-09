@@ -11,5 +11,9 @@ def home():
 def sobre():
     return "Projeto desenvolvido na disciplina de Integração e Entrega Contínua"
 
+@app.route("/livros")
+def livros():
+    return "Lista de livros cadastrados"
+
 if __name__ == "__main__":
     app.run(debug=True)
