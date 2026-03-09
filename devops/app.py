@@ -1,24 +1,19 @@
-
 from flask import Flask
 
 app = Flask(__name__)
 
 @app.route("/")
 def home():
-    return "Sistema de Gerenciamento de Biblioteca"
+    return "Sistema de Gestão de Biblioteca"
 
 @app.route("/sobre")
 def sobre():
-    return "Projeto desenvolvido na disciplina de Integração e Entrega Contínua"
+    return "Sistema desenvolvido em Flask para estudo de CI/CD"
 
 @app.route("/livros")
 def livros():
     return "Lista de livros cadastrados"
 
-feature-cadastro-autor
-=======
-
-main
 @app.route("/cadastro-livro")
 def cadastro_livro():
     return "Página de cadastro de livros"
