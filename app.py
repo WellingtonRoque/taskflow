@@ -16,7 +16,9 @@ def livros():
 
 @app.route("/cadastro-livro")
 def cadastro_livro():
-    return "Página de cadastro de livros"
+    return {"mensagem": API funcionando}
+
+
 
 if __name__ == "__main__":
     app.run(debug=True)
