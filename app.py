@@ -16,7 +16,7 @@ def livros():
 
 @app.route("/cadastro-livro")
 def cadastro_livro():
-    return {"mensagem": API funcionando}
+    return "Livros cadastrados"
 
 
 
