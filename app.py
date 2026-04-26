@@ -18,6 +18,9 @@ def livros():
 def cadastro_livro():
     return "Livros cadastrados"
 
+@app.route("/status")
+def status():
+    return {"status": "erro"}
 
 
 if __name__ == "__main__":
