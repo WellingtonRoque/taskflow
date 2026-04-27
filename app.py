@@ -20,7 +20,7 @@ def cadastro_livro():
 
 @app.route("/status")
 def status():
-    return {"status": "ok"}
+    return {"status": "error"}
 
 
 if __name__ == "__main__":
