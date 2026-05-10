@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def home():
-    return "Sistema de Gestão de Biblioteca
+    return "Sistema de Gestão de Biblioteca"
 
 @app.route("/sobre")
 def sobre():
@@ -20,7 +20,7 @@ def cadastro_livro():
 
 @app.route("/status")
 def status():
-    return {"status": "error"}
+    return {"status": "ok"}
 
 
 if __name__ == "__main__":
